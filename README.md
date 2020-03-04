@@ -139,7 +139,8 @@ Unrecognized options will be ignored.  Supported options:
   * **examplePathPrefix**: Specify the location of the example directory for resolving `@example`
     directives.
   * **exclude**:  Specify a list of library names to avoid generating docs for,
-    overriding any specified in include.
+    overriding any specified in include.  This can only refer to libraries declared in files located
+    beneath the dartdoc_options.yaml file (usually, within your package).
   * **errors**:  Specify warnings to be treated as errors.  See the lists of valid warnings in the command
     line help for `--errors`, `--warnings`, and `--ignore`.
   * **favicon**:  A path to a favicon for the generated docs.
@@ -148,7 +149,9 @@ Unrecognized options will be ignored.  Supported options:
   * **header**:  A list of paths to header files containing HTML text.
   * **ignore**:  Specify warnings to be completely ignored.  See the lists of valid warnings in the command
     line help for `--errors`, `--warnings`, and `--ignore`.
-  * **include**:  Specify a list of library names to generate docs for, ignoring all others.
+  * **include**:  Specify a list of library names to generate docs for, ignoring all others.  This can
+    only refer to libraries declared in files located beneath the dartdoc_options.yaml file (usually,
+    within your package).
   * **includeExternal**:  Specify a list of library filenames to add to the list of documented libraries.
   * **linkTo**:  For other packages depending on this one, if this map is defined those packages
     will use the settings here to control how hyperlinks to the package are generated.
